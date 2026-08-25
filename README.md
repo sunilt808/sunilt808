@@ -1,331 +1,108 @@
-# Hi, I'm Sunil T 👋
+<h1 align="center">Hi, I'm Sunil T 👋</h1>
+<h3 align="center">Full-Stack Developer · Backend Engineer · CSE Undergraduate</h3>
 
-### Full-Stack Developer | Software Engineer | CSE Undergraduate
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=sunilt808&label=Profile%20Views&color=0e75b6&style=flat" alt="profile views" />
+  <img src="https://img.shields.io/github/followers/sunilt808?label=Follow&style=social" alt="github followers" />
+</p>
 
-I'm a Computer Science and Engineering undergraduate at **Dayananda Sagar College of Engineering**, interested in building practical software systems and exploring backend engineering, system design, algorithms, automation, and emerging technologies.
+I'm a Computer Science & Engineering undergraduate at **Dayananda Sagar College of Engineering**, building practical software systems across the stack — with a growing focus on backend engineering, system design, and graph algorithms. I like projects that force me to think about data modeling and correctness under real-world mess, not just CRUD.
 
-I primarily work with **C++, Python, FastAPI, React.js, MongoDB, MySQL, Docker, and Git/GitHub**.
-
-* 🎓 B.E. Computer Science & Engineering — Dayananda Sagar College of Engineering
-* 📊 CGPA: **8.38**
-* 💻 Focused on **Full-Stack Development & Software Engineering**
-* 🧠 Currently strengthening **DSA, System Design & Advanced Technologies**
-* 🚀 Interested in **Backend Engineering, Scalable Systems, DevOps, Graph Algorithms & Automation**
-* 🏆 **Top 5 — DSA Hackathon, BMSCE**
-* 🏅 Participated in **4+ hackathons**, including **RIFT National 2026 conducted by PW**
-* 🔐 Participant — **Point Blank CTF**
-* 📚 Practicing DSA on **GeeksforGeeks & LeetCode**
+- 🎓 B.E. CSE, Dayananda Sagar College of Engineering — **CGPA 8.38**
+- 🧠 Currently deep in DSA, System Design, and distributed/scalable backend architecture
+- 🏆 Top 5, DSA Hackathon (BMSCE) · 4+ hackathons including **RIFT National 2026 (PW)** · Participant, **Point Blank CTF**
+- 📚 Sharpening DSA daily on [LeetCode](https://leetcode.com/u/Sunil_T808/) & [GeeksforGeeks](https://www.geeksforgeeks.org/profile/suniltso14h)
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Languages
+**Languages**
+<p><img src="https://skillicons.dev/icons?i=cpp,python,javascript,java" /></p>
 
-<p>
-  <img src="https://skillicons.dev/icons?i=cpp,python,javascript,java" />
-</p>
+**Frontend**
+<p><img src="https://skillicons.dev/icons?i=react,html,css,vite" /></p>
 
-### Frontend
+**Backend**
+<p><img src="https://skillicons.dev/icons?i=fastapi" /></p>
 
-<p>
-  <img src="https://skillicons.dev/icons?i=react,html,css,vite" />
-</p>
+**Databases**
+<p><img src="https://skillicons.dev/icons?i=mongodb,mysql,sqlite" /></p>
 
-### Backend
+**DevOps & Tools**
+<p><img src="https://skillicons.dev/icons?i=docker,kubernetes,jenkins,git,github" /></p>
 
-<p>
-  <img src="https://skillicons.dev/icons?i=fastapi" />
-</p>
-
-### Databases
-
-<p>
-  <img src="https://skillicons.dev/icons?i=mongodb,mysql,sqlite" />
-</p>
-
-### DevOps & Tools
-
-<p>
-  <img src="https://skillicons.dev/icons?i=docker,kubernetes,jenkins,git,github" />
-</p>
-
-### Core Concepts
-
-* Data Structures & Algorithms
-* Object-Oriented Programming
-* DBMS
-* REST API Development
-* Authentication & Authorization
-* JWT
-* Role-Based Access Control
-* Multi-Tenant Architecture
-* System Design
-* Graph Algorithms
-* CI/CD
-* Containerization
-* Cloud Deployment
-* MVC Architecture
+**Core concepts I work with regularly:** Data Structures & Algorithms · OOP · DBMS · REST API design · JWT auth & RBAC · Multi-tenant architecture · Graph algorithms · CI/CD · Containerization · MVC
 
 ---
 
-# 🚀 Featured Projects
+## 🚀 Featured Projects
 
-## 1. TraceAcc — Graph-Based Anti-Money Laundering Detection Platform
+### 🔗 [TraceAcc](https://github.com/sunilt808/TraceAcc) — Graph-Based AML Detection Platform
+*Graph theory meets fraud detection.* Transaction records are modeled as directed graphs to surface money-laundering and money-muling patterns — cycle detection, fan-in/fan-out analysis, burst activity, layered transactions, and community/motif analysis, backed by an ML anomaly-detection layer and an interactive Cytoscape.js investigation dashboard.
 
-> **Graph Theory + Fraud Detection + Full-Stack Development**
-
-TraceAcc is a platform for analyzing financial transaction networks and identifying potentially suspicious money-laundering and money-muling patterns.
-
-Transaction records are converted into **directed graphs**, enabling graph-based analysis of relationships, transaction behavior, and suspicious activity.
-
-### Highlights
-
-* Directed transaction graph construction
-* Cycle detection
-* Fan-in / fan-out analysis
-* Burst activity detection
-* Layered transaction analysis
-* Graph-based anomaly detection
-* High-risk entity identification
-* Interactive transaction investigation
-* Cytoscape.js graph visualization
-* React-based investigation dashboard
-* Graph centrality analysis
-* Community detection
-* Motif analysis
-* Risk propagation
-* ML-based anomaly detection
-
-**Tech:** `Python` `Graph Theory` `React` `Cytoscape.js` `Machine Learning`
-
-> 🚧 **Status:** Active development — final version targeted before **September 12, 2026**.
-
-[View TraceAcc →](https://github.com/sunilt808/TraceAcc)
+`Python` · `Graph Theory` · `React` · `Cytoscape.js` · `Machine Learning`
+🚧 Active development — targeting a final version by **Sept 12, 2026**
 
 ---
 
-## 2. Noq — Multi-Tenant Hospital Management System
+### 🔗 [Noq](https://github.com/sunilt808/Noq-hospital) — Multi-Tenant Hospital Management System
+A hospital platform with true tenant-level data isolation, serving four distinct roles — System Admin, Hospital Manager, Doctor, and Patient — through role-specific workflows for appointments, smart queues, token generation, and billing.
 
-> **Full-Stack Healthcare Platform + Multi-Tenant Architecture**
-
-Noq is a multi-tenant hospital management platform designed to digitize appointments, patient queues, billing, and hospital workflows.
-
-The system provides **hospital-level data isolation** with role-specific workflows.
-
-### Roles
-
-* System Administrator
-* Hospital Manager
-* Doctor
-* Patient
-
-### Highlights
-
-* Multi-tenant hospital architecture
-* Hospital-level data isolation
-* Appointment management
-* Smart queue handling
-* Token generation
-* Billing workflows
-* Role-Based Access Control
-* JWT authentication
-* REST APIs
-* Cloud deployment
-
-**Tech:** `React` `FastAPI` `MongoDB Atlas` `JWT` `Vercel` `Render`
-
-[View Noq →](https://github.com/sunilt808/Noq-hospital)
+`React` · `FastAPI` · `MongoDB Atlas` · `JWT` · `Vercel` · `Render`
 
 ---
 
-## 3. CutSlot — Elite Salon Management System
+### 🔗 [CutSlot](https://github.com/sunilt808/Cutslot-4) — Elite Salon Management System
+A premium, glassmorphic salon platform connecting clients, workers, and admins — booking, worker allocation, wallets, reviews, revenue analytics, and audit trails — shipped with a full Docker → Kubernetes → Jenkins CI/CD pipeline.
 
-> **Full-Stack Product + UI/UX + DevOps**
-
-CutSlot is a premium digital salon management ecosystem connecting **clients, workers, and administrators** through a role-based platform.
-
-The project places strong emphasis on **UI/UX, business workflows, security, and deployment automation**.
-
-### Highlights
-
-* Premium glassmorphic UI
-* Light / Dark theme
-* Client booking workflow
-* Service selection
-* Worker allocation
-* Worker dashboard
-* Reviews and ratings
-* Client wallet and transactions
-* Admin dashboard
-* Workforce management
-* Service management
-* Revenue analytics
-* Audit trail
-* JWT authentication
-* Role-Based Access Control
-* Docker
-* Kubernetes
-* Jenkins CI/CD
-
-### Architecture
-
-```text
-React Frontend
-       ↓
-FastAPI Backend
-       ↓
-SQLAlchemy
-       ↓
-SQLite
+```
+React Frontend → FastAPI Backend → SQLAlchemy → SQLite
 ```
 
-**Tech:** `React 19` `Vite` `FastAPI` `Python` `SQLite` `SQLAlchemy` `Docker` `Kubernetes` `Jenkins`
-
-[View CutSlot →](https://github.com/sunilt808/Cutslot-4)
+`React 19` · `Vite` · `FastAPI` · `SQLite` · `SQLAlchemy` · `Docker` · `Kubernetes` · `Jenkins`
 
 ---
 
-## 4. PlacementOS — AI Placement Intelligence Monitor
+### PlacementOS — AI Placement Intelligence Monitor
+Self-hosted platform that watches a college placement Telegram group 24/7 and turns unstructured messages into structured, actionable opportunities. Built on one guiding principle: **recall > precision — missing a real opportunity is worse than a false alert.**
 
-> **Automation + NLP + Document Processing + Full-Stack**
+Pulls from Telethon userbot + historical import, extracts from PDFs/DOCX/Excel/images (Tesseract OCR) and Google Forms, and runs local-first NLP (spaCy + dateparser + regex, with optional Gemini enhancement) to match 150+ CSE-family roles, score eligibility, dedupe and merge opportunities, and track deadlines — with a React dashboard and automated Telegram alerts.
 
-PlacementOS is a self-hosted placement intelligence platform that monitors a college placement Telegram group and converts unstructured messages into actionable placement opportunities.
-
-Its core design principle is:
-
-> **Recall > Precision — missing a genuine opportunity is worse than receiving a false alert.**
-
-### Highlights
-
-* 24/7 Telegram monitoring
-* Telethon userbot
-* Historical Telegram import
-* PDF / DOCX / TXT extraction
-* Excel / CSV shortlist detection
-* Image OCR with Tesseract
-* Google Forms detection
-* Local-first NLP extraction
-* spaCy + dateparser + regex
-* Optional Gemini enhancement
-* 150+ CSE-family role matching
-* Eligibility scoring
-* Opportunity deduplication
-* Same-company opportunity merging
-* Deadline tracking
-* Automated deadline reminders
-* Telegram alerts
-* Shortlist notifications
-* Application tracking
-* Storage quota monitoring
-* Automated lifecycle cleanup
-* React dashboard
-* Calendar
-* SSE-based historical import
-* JWT authentication
-* Optional grounded Gemini assistant
-
-### Architecture
-
-```text
-Telegram
-   ↓
-Telethon / Bot API / Historical Import
-   ↓
-Message Pipeline
-   ↓
-Local NLP + OCR + PDF/DOCX Extraction
-   ↓
-Opportunity Engine
-   ↓
-Deduplication + Eligibility + Deadline Analysis
-   ↓
-MongoDB
-   ↓
-FastAPI REST / SSE
-   ↓
-React Dashboard
-   ↓
-Telegram Notifications
+```
+Telegram → Telethon/Bot API/Import → Message Pipeline → NLP + OCR + Extraction
+→ Opportunity Engine → Dedup + Eligibility + Deadlines → MongoDB → FastAPI (REST/SSE) → React Dashboard → Telegram Alerts
 ```
 
 ---
 
-## 5. BookSwap — Android Book Exchange Platform
+### 🔗 [BookSwap](https://github.com/sunilt808/BookSwap) — Android Book Exchange Platform
+An Android app for students to list, discover, borrow, and exchange books within their college community — JWT auth, user/admin roles, and a clean MVC structure over SQLite.
 
-> **Android Development + MVC + Authentication + SQLite**
-
-BookSwap is an Android application designed to help students **exchange, donate, borrow, and share books within their college community**.
-
-The platform focuses on making academic resources more accessible by allowing students to list books, discover available resources, and initiate exchanges.
-
-### Highlights
-
-* JWT-based authentication
-* User and Admin roles
-* Book management
-* Book CRUD operations
-* Browse and search books
-* Book exchange requests
-* User management
-* Admin dashboard
-* Book management for administrators
-* SQLite database
-* Android XML-based UI
-* MVC architecture
-* Student-focused book exchange workflow
-
-### Architecture
-
-```text
-Android Application
-        ↓
-Activities / Controllers
-        ↓
-Adapters + Application Logic
-        ↓
-Models
-        ↓
-SQLite Database
+```
+Activities/Controllers → Adapters + Logic → Models → SQLite
 ```
 
-[View BookSwap →](https://github.com/sunilt808/BookSwap)
+`Android` · `SQLite` · `MVC` · `JWT`
 
 ---
 
 ## 📚 Currently Learning
 
-* Advanced Data Structures & Algorithms
-* Graph Algorithms
-* System Design
-* Backend Architecture
-* Scalable Systems
-* DevOps & CI/CD
-* Cloud Deployment
-* Machine Learning Applications
-* Automation
-* Advanced Software Engineering Practices
+Advanced DSA & Graph Algorithms · System Design · Scalable Backend Architecture · DevOps & CI/CD · Cloud Deployment · ML-powered Software Systems
 
----
+## 🎯 Open To
 
-## 🎯 Career Interests
-
-I'm particularly interested in opportunities involving:
-
-* **Backend Engineering**
-* **Full-Stack Development**
-* **Software Engineering**
-* **Distributed & Scalable Systems**
-* **System Design**
-* **DevOps & Cloud**
-* **Graph Algorithms**
-* **Automation**
-* **AI/ML-powered Software Systems**
+Roles in **Backend Engineering**, **Full-Stack Development**, and **Distributed/Scalable Systems** — especially teams working on system design, DevOps, or graph-driven problems.
 
 ---
 
 ## 🤝 Let's Connect
 
-I'm always open to discussing **software engineering, backend systems, system design, DSA, hackathons, open-source projects, and interesting technical ideas**.
+Always up for talking backend systems, system design, DSA, hackathons, or open-source ideas.
 
-[GitHub](https://github.com/sunilt808)
+[![GitHub](https://img.shields.io/badge/GitHub-sunilt808-181717?style=for-the-badge&logo=github)](https://github.com/sunilt808)
+[![LeetCode](https://img.shields.io/badge/LeetCode-Sunil__T808-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/Sunil_T808/)
+[![GeeksforGeeks](https://img.shields.io/badge/GeeksforGeeks-suniltso14h-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white)](https://www.geeksforgeeks.org/profile/suniltso14h)
+[![Resume](https://img.shields.io/badge/Resume-PDF-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://github.com/sunilt808/sunilt808/blob/main/Sunil_T_RESUME.pdf)
+[![Email](https://img.shields.io/badge/Email-suniltsuni50%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:suniltsuni50@gmail.com)
