@@ -38,41 +38,42 @@ I'm a Computer Science & Engineering undergraduate at **Dayananda Sagar College 
 
 ## 🚀 Featured Projects
 
-### 🔗 [TraceAcc](https://github.com/sunilt808/TraceAcc) — Graph-Based AML Detection Platform
-*Graph theory meets fraud detection.* Transaction records are modeled as directed graphs to surface money-laundering and money-muling patterns — cycle detection, fan-in/fan-out analysis, burst activity, layered transactions, and community/motif analysis, backed by an ML anomaly-detection layer and an interactive Cytoscape.js investigation dashboard.
+### 🔗 [TraceAcc](https://github.com/sunilt808/TraceAcc) — Graph-Based AML & Money-Muling Detection Engine
+*Graph theory meets fraud detection.* Transaction CSVs are parsed into a directed transaction graph, then run through a multi-heuristic detection pipeline — DFS-based cycle detection for fraud rings, fan-in/fan-out hub detection, layering-chain tracing through shell accounts, and burst-activity detection for mule reactivation — plus an unsupervised ML layer (Isolation Forest, Local Outlier Factor, DBSCAN) over per-account behavioral features. Every account gets a weighted 0–100 suspicion score, with results explored through a FastAPI backend and a React + Cytoscape.js investigation dashboard.
 
-`Python` · `Graph Theory` · `React` · `Cytoscape.js` · `Machine Learning`
-🚧 Active development — targeting a final version by **Sept 12, 2026**
+`Python` · `FastAPI` · `NetworkX` · `Graph Theory` · `React` · `Cytoscape.js` · `scikit-learn`
 
 ---
 
-### 🔗 [Noq](https://github.com/sunilt808/Noq-hospital) — Multi-Tenant Hospital Management System
+### 🔗 [Noq](https://github.com/sunilt808/Noq-hospital) — Multi-Tenant Hospital Management System &nbsp;[![Live Demo](https://img.shields.io/badge/Live-Demo-2ea44f?style=flat-square)](https://noq-hospital.vercel.app/signup)
 A hospital platform with true tenant-level data isolation, serving four distinct roles — System Admin, Hospital Manager, Doctor, and Patient — through role-specific workflows for appointments, smart queues, token generation, and billing.
 
 `React` · `FastAPI` · `MongoDB Atlas` · `JWT` · `Vercel` · `Render`
 
 ---
 
-### 🔗 [CutSlot](https://github.com/sunilt808/Cutslot-4) — Elite Salon Management System
-A premium, glassmorphic salon platform connecting clients, workers, and admins — booking, worker allocation, wallets, reviews, revenue analytics, and audit trails — shipped with a full Docker → Kubernetes → Jenkins CI/CD pipeline.
+### CutSlot — Elite Salon Management System &nbsp;![Private](https://img.shields.io/badge/repo-private-lightgrey?style=flat-square)
+A premium, glassmorphic salon platform connecting Guests, Artisans (workers), and the Directorate (admins) — booking, worker dispatch, wallets, reviews, and revenue/audit dashboards. **Project focus is deliberately frontend craft + DevOps**, not backend depth: a FastAPI/SQLAlchemy backend exists and is fully wired up, but the real work here is the glassmorphic UI system and a complete Docker → Kubernetes → Jenkins CI/CD pipeline (Terraform included).
 
 ```
-React Frontend → FastAPI Backend → SQLAlchemy → SQLite
+Model (SQLAlchemy + Pydantic) ← Controller (FastAPI, main.py) ← View (React, role-split by admin/worker/client/common)
 ```
 
-`React 19` · `Vite` · `FastAPI` · `SQLite` · `SQLAlchemy` · `Docker` · `Kubernetes` · `Jenkins`
+`React 19` · `Vite` · `FastAPI` · `SQLite` · `SQLAlchemy` · `Docker` · `Kubernetes` · `Jenkins` · `Terraform`
 
 ---
 
-### PlacementOS — AI Placement Intelligence Monitor
-Self-hosted platform that watches a college placement Telegram group 24/7 and turns unstructured messages into structured, actionable opportunities. Built on one guiding principle: **recall > precision — missing a real opportunity is worse than a false alert.**
+### PlacementOS — AI Placement Intelligence Monitor &nbsp;![Private](https://img.shields.io/badge/repo-private-lightgrey?style=flat-square) &nbsp;[![Live Demo](https://img.shields.io/badge/Live-Demo-2ea44f?style=flat-square)](https://placement-os-rust.vercel.app/)
+A self-hosted, single-user placement assistant that watches my college's placement Telegram group 24/7 and turns unstructured messages into structured, actionable opportunities. Repo is private since it's tuned to my own placement group and credentials, but the app is deployed and viewable live. Built on one guiding principle: **recall > precision — missing a real opportunity is worse than a false alert.** The core extraction loop runs fully offline, no AI API key required.
 
-Pulls from Telethon userbot + historical import, extracts from PDFs/DOCX/Excel/images (Tesseract OCR) and Google Forms, and runs local-first NLP (spaCy + dateparser + regex, with optional Gemini enhancement) to match 150+ CSE-family roles, score eligibility, dedupe and merge opportunities, and track deadlines — with a React dashboard and automated Telegram alerts.
+Pulls from a Telethon userbot + historical import, extracts from PDFs/DOCX/Excel/images (Tesseract OCR) and Google Forms, and runs local-first NLP (spaCy + dateparser + regex, with optional Gemini escalation) to match 150+ CSE-family roles, score eligibility, dedupe and merge same-company opportunities into one timeline, and track deadlines — with a React dashboard, storage-quota guardian, and automated Telegram alerts.
 
 ```
 Telegram → Telethon/Bot API/Import → Message Pipeline → NLP + OCR + Extraction
-→ Opportunity Engine → Dedup + Eligibility + Deadlines → MongoDB → FastAPI (REST/SSE) → React Dashboard → Telegram Alerts
+→ Opportunity Engine → Dedup + Eligibility + Deadlines → MongoDB Atlas → FastAPI (REST/SSE) → React Dashboard → Telegram Alerts
 ```
+
+`FastAPI` · `Telethon` · `spaCy` · `MongoDB Atlas` · `React 19` · `Vercel` · `Render`
 
 ---
 
@@ -83,7 +84,7 @@ An Android app for students to list, discover, borrow, and exchange books within
 Activities/Controllers → Adapters + Logic → Models → SQLite
 ```
 
-`Android` · `SQLite` · `MVC` · `JWT`
+`Android` · `Java` · `SQLite` · `MVC` · `JWT`
 
 ---
 
