@@ -3,354 +3,304 @@
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=sunilt808&label=Profile%20Views&color=0e75b6&style=flat" alt="profile views" />
-  <img src="https://img.shields.io/github/followers/sunilt808?label=Follow&style=social" alt="GitHub followers" />
+  <img src="https://img.shields.io/github/followers/sunilt808?label=Follow&style=social" alt="github followers" />
 </p>
 
-<p align="center">
-  Building practical software systems with a focus on backend engineering, APIs, data modeling, authentication, graph-based analysis, and DevOps.
-</p>
+I'm a Computer Science & Engineering undergraduate at **Dayananda Sagar College of Engineering**, building practical software systems across the stack — with a growing focus on backend engineering, system design, and graph algorithms. I like projects that force me to think about data modeling and correctness under real-world mess, not just CRUD.
 
----
-
-## 👨‍💻 About Me
-
-I'm a Computer Science & Engineering undergraduate at **Dayananda Sagar College of Engineering**, interested in building software systems that solve practical problems beyond basic CRUD applications.
-
-My current focus is on **Data Structures & Algorithms, backend engineering, system design, and DevOps**, while building projects involving real-world workflows, security, data processing, and graph analytics.
-
-* 🎓 B.E. Computer Science & Engineering — **CGPA: 8.38**
-* 🧠 Currently focusing on **DSA, System Design, Backend Architecture & DevOps**
-* 🏆 **Top 5 — DSA Hackathon, BMSCE**
-* 🏆 Participated in **4+ hackathons**, including **RIFT National 2026**
-* 🔐 Participant — **Point Blank CTF**
-* 💻 Practicing DSA on [LeetCode](https://leetcode.com/u/Sunil_T808/) and [GeeksforGeeks](https://www.geeksforgeeks.org/profile/suniltso14h)
+* 🎓 B.E. CSE, Dayananda Sagar College of Engineering — **CGPA 8.38**
+* 🧠 Currently deep in DSA, System Design, and distributed/scalable backend architecture
+* 🏆 Top 5, DSA Hackathon (BMSCE) · 4+ hackathons including **RIFT National 2026 (PW)** · Participant, **Point Blank CTF**
+* 📚 Sharpening DSA daily on [LeetCode](https://leetcode.com/u/Sunil_T808/) & [GeeksforGeeks](https://www.geeksforgeeks.org/profile/suniltso14h)
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Languages
+**Languages**
 
-<p>
-  <img src="https://skillicons.dev/icons?i=cpp,python,javascript,java" />
-</p>
+<p><img src="https://skillicons.dev/icons?i=cpp,python,javascript,java" /></p>
 
-### Frontend
+**Frontend**
 
-<p>
-  <img src="https://skillicons.dev/icons?i=react,html,css,vite" />
-</p>
+<p><img src="https://skillicons.dev/icons?i=react,html,css,vite" /></p>
 
-### Backend
+**Backend**
 
-<p>
-  <img src="https://skillicons.dev/icons?i=fastapi" />
-</p>
+<p><img src="https://skillicons.dev/icons?i=fastapi" /></p>
 
-### Databases
+**Databases**
 
-<p>
-  <img src="https://skillicons.dev/icons?i=mongodb,mysql,sqlite,postgres" />
-</p>
+<p><img src="https://skillicons.dev/icons?i=mongodb,mysql,sqlite" /></p>
 
-### DevOps & Tools
+**DevOps & Tools**
 
-<p>
-  <img src="https://skillicons.dev/icons?i=docker,kubernetes,jenkins,terraform,git,github" />
-</p>
+<p><img src="https://skillicons.dev/icons?i=docker,kubernetes,jenkins,git,github" /></p>
 
-### Core Concepts
-
-`Data Structures & Algorithms` · `OOP` · `DBMS` · `REST APIs` · `JWT Authentication` · `RBAC` · `Multi-Tenant Architecture` · `Graph Algorithms` · `CI/CD` · `Containerization` · `MVC`
+**Core concepts I work with regularly:** Data Structures & Algorithms · OOP · DBMS · REST API design · JWT auth & RBAC · Multi-tenant architecture · Graph algorithms · CI/CD · Containerization · MVC
 
 ---
 
-# 🚀 Featured Projects
+## 🚀 Featured Projects
 
-## 🔎 TraceAcc Pro — Enterprise AML Operations Platform
+### 🔗 [TraceAcc1](https://github.com/sunilt808/TraceAcc1) — Graph-Based AML & Money-Muling Detection Engine
 
-[![GitHub](https://img.shields.io/badge/GitHub-TraceAcc%20Pro-181717?style=flat-square\&logo=github)](https://github.com/sunilt808/TraceAcc1)
+*Graph theory meets fraud detection.* TraceAcc is an **AML operations and money-muling detection platform** that analyzes financial transactions as graphs to uncover suspicious account relationships and behavioral patterns. It combines graph-based detection with machine-learning techniques to generate risk intelligence and help investigators explore potentially suspicious transaction networks through an interactive dashboard.
 
-<a href="https://deepwiki.com/sunilt808/TraceAcc1">
-  <img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki" />
-</a>
+Built with **FastAPI, NetworkX, scikit-learn, PyTorch, React, and Cytoscape.js**, bringing together graph algorithms, anomaly detection, and visual investigation into one system.
 
-An **Anti-Money Laundering (AML) operations platform** connecting client intake, technical transaction analysis, investigation, case management, and governed report release through a single workflow.
+`Python` · `FastAPI` · `NetworkX` · `Graph Theory` · `scikit-learn` · `PyTorch` · `React` · `Cytoscape.js`
 
-### 🔬 Detection & Intelligence
-
-* 🕸️ Transaction graph analysis using **NetworkX**
-* 🔄 Cycle detection for potential transaction rings
-* 📡 Fan-in / fan-out hub detection
-* ⛓️ Layering-chain detection
-* ⚡ Burst-activity detection
-* 🧠 Behavioural and temporal analysis
-* 👥 Community and centrality analysis
-* 🤖 Isolation Forest, LOF and DBSCAN anomaly detection
-* 🧬 **DC-LCG dual-view Graph Neural Network using PyTorch**
-* 📊 Hybrid **0–100 risk scoring**
-* 🔎 Intel Hub with account dossiers, similar-account search and money-flow paths
-* 🚨 Automated alerts and investigator case escalation
-
-### 🏢 Governed Workflow
+#### 🏗️ Architecture
 
 ```text
-Client Portal
-     ↓
-Service Request
-     ↓
-Admin Workspace
-     ↓
-TraceLab
-     ├── Transaction Graph
-     ├── 15-Pattern Detection
-     ├── ML Anomaly Detection
-     └── DC-LCG GNN
-     ↓
-Technical Report Draft
-     ↓
-Risk Alerts
-     ↓
-InvoSpace Investigation
-     ├── Cases
-     ├── Evidence
-     ├── Notes / Findings
-     └── Investigation Report
-     ↓
-Admin Review
-     ↓
-SHA-256 Sealed Report
-     ↓
-Client Portal
-```
-
-### ⚙️ Architecture
-
-```text
-React 18 + Vite
+Transaction Data / CSV
+        ↓
+Data Parsing & Validation
+        ↓
+Transaction Graph
+(NetworkX)
+        ↓
+┌───────────────────────────────┐
+│ Graph-Based Detection         │
+│ • Cycles                      │
+│ • Fan-In / Fan-Out            │
+│ • Layering Chains              │
+│ • Burst Activity              │
+└───────────────────────────────┘
+        +
+┌───────────────────────────────┐
+│ ML Anomaly Detection          │
+│ • Isolation Forest             │
+│ • LOF                          │
+│ • DBSCAN                       │
+└───────────────────────────────┘
+        ↓
+Risk Intelligence / Scoring
         ↓
 FastAPI REST API
         ↓
-Detection & Intelligence Layer
-        ↓
-SQLAlchemy ORM
-        ↓
-SQLite / PostgreSQL
+React + Cytoscape.js
+Investigation Dashboard
 ```
-
-The platform contains **15 automated detection patterns**, a hybrid detection engine, versioned DC-LCG model artifacts, role/workspace-based access control, audit trails, technical reports, investigation cases and controlled client release.
-
-`Python` · `FastAPI` · `NetworkX` · `PyTorch` · `scikit-learn` · `React 18` · `Vite` · `Cytoscape.js` · `SQLAlchemy` · `PostgreSQL` · `SQLite` · `JWT` · `RBAC`
-
----
-
-## 🏥 Noq — Multi-Tenant Hospital Management System
-
-[![GitHub](https://img.shields.io/badge/GitHub-Noq--Hospital-181717?style=flat-square\&logo=github)](https://github.com/sunilt808/Noq-hospital)
-[![Live Demo](https://img.shields.io/badge/Live-Demo-2ea44f?style=flat-square)](https://noq-hospital.vercel.app/signup)
-
-<a href="https://deepwiki.com/sunilt808/Noq-hospital">
-  <img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki" />
-</a>
-
-A **full-stack hospital queue and appointment platform** designed to replace traditional physical queues with a digital token-based workflow.
-
-### Key Features
-
-* 🏥 Multi-hospital / multi-tenant architecture
-* 📅 Appointment scheduling
-* 🎫 Digital token management
-* ⏱️ Smart queue management
-* 👨‍⚕️ Doctor workflows
-* 👤 Patient portal
-* 💳 Billing and revenue management
-* 📋 Medical records and prescriptions
-* 🔔 Notifications
-* ⭐ Reviews and complaints
-* 🚫 Patient no-show disciplinary system
-* 📝 Audit logging
-* 🔐 JWT authentication and RBAC
-
-### Role-Based Workflow
-
-```text
-Admin
-  ↓
-Hospital Manager
-  ↓
-Doctor
-  ↓
-Patient
-```
-
-Patients can book appointments, track token status, access records and pay bills. Doctors manage consultation queues and prescriptions, while Hospital Managers handle infrastructure, assignments, revenue and notifications.
-
-The system uses a decoupled **React + Vite frontend**, **FastAPI REST backend**, and **MongoDB** database, deployed through Vercel and Render.
-
-`React` · `Vite` · `FastAPI` · `Uvicorn` · `MongoDB` · `JWT` · `PBKDF2` · `RBAC` · `Vercel` · `Render`
-
----
-
-## 📡 PlacementOS — AI Placement Intelligence Monitor
-
-![Private](https://img.shields.io/badge/Repository-Private-lightgrey?style=flat-square)
-[![Live Demo](https://img.shields.io/badge/Live-Demo-2ea44f?style=flat-square)](https://placement-os-rust.vercel.app/)
-
-A personal placement intelligence system that transforms unstructured college placement updates into **structured, actionable opportunities**.
-
-It monitors placement communications, extracts job information from messages and documents, evaluates eligibility, tracks deadlines, and deduplicates repeated company announcements.
-
-### Processing Pipeline
-
-```text
-Telegram / Documents
-        ↓
-Message & File Processing
-        ↓
-OCR + NLP + Extraction
-        ↓
-Opportunity Detection
-        ↓
-Eligibility Matching
-        ↓
-Deduplication + Deadline Tracking
-        ↓
-MongoDB Atlas
-        ↓
-FastAPI
-        ↓
-React Dashboard
-        ↓
-Telegram Alerts
-```
-
-The system follows a **recall-first approach**, prioritizing discovery of potential opportunities before applying relevance and eligibility filtering.
-
-`FastAPI` · `Telethon` · `spaCy` · `Tesseract OCR` · `MongoDB Atlas` · `React 19` · `Vercel` · `Render`
-
----
-
-## 💇 CutSlot — Elite Salon Management System
-
-![Private](https://img.shields.io/badge/Repository-Private-lightgrey?style=flat-square)
-
-A salon management platform connecting **Guests, Artisans and Directorate/Admins** through role-specific workflows.
-
-The project focuses on **frontend engineering, application architecture and DevOps**, combining a React interface with a FastAPI backend and containerized CI/CD infrastructure.
-
-### Key Features
-
-* 📅 Appointment booking
-* 👤 Role-based dashboards
-* 👨‍🔧 Artisan / worker management
-* 💳 Wallet workflows
-* ⭐ Reviews
-* 📊 Revenue and audit dashboards
-* 🐳 Docker
-* ☸️ Kubernetes
-* 🔄 Jenkins CI/CD
-* 🏗️ Terraform
-
-### Architecture
-
-```text
-React Frontend
-      ↓
-FastAPI Controllers
-      ↓
-SQLAlchemy
-      ↓
-SQLite
-```
-
-`React 19` · `Vite` · `FastAPI` · `SQLAlchemy` · `SQLite` · `Docker` · `Kubernetes` · `Jenkins` · `Terraform`
-
----
-
-## 📚 BookSwap — Android Book Exchange Platform
-
-[![GitHub](https://img.shields.io/badge/GitHub-BookSwap-181717?style=flat-square\&logo=github)](https://github.com/sunilt808/BookSwap)
-
-An Android application that helps students **exchange, donate, borrow and share books** within their college community.
-
-### Key Features
-
-* 🔐 JWT authentication
-* 📚 Add and manage books
-* 🔍 Browse, search and filter
-* 🔄 Exchange requests
-* 👤 Profile management
-* 🛡️ Admin dashboard
-* 📋 Book CRUD
-* 🗄️ SQLite storage
-
-### MVC Architecture
-
-```text
-Model
- ├── User
- ├── Book
- ├── Exchange
- └── SQLite DB Helper
-
-View
- ├── XML Screens
- ├── RecyclerViews
- └── Dialogs
-
-Controller
- ├── Activities
- ├── Adapters
- ├── Auth Manager
- └── Exchange Logic
-```
-
-The repository documents BookSwap as a Java/XML/SQLite Android application with JWT authentication, User/Admin roles and MVC organization.
-
-`Java` · `Android` · `XML` · `SQLite` · `JWT` · `MVC` · `Android Studio`
-
----
-
-# 📚 Currently Learning
-
-* Data Structures & Algorithms
-* System Design
-* Backend Architecture
-* Database Design
-* DevOps & CI/CD
-* Cloud Deployment
-* Machine Learning for Software Systems
-
----
-
-# 🎯 Open To
-
-I'm interested in opportunities involving:
-
-**Backend Engineering · Full-Stack Development · Software Engineering · System Design · DevOps**
-
-I particularly enjoy working on problems involving **APIs, data processing, authentication, graph algorithms, databases and complete end-to-end systems.**
-
----
-
-# 🤝 Let's Connect
-
-Always interested in discussing **backend systems, DSA, system design, hackathons and software projects.**
 
 <p>
-  <a href="https://github.com/sunilt808">
-    <img src="https://img.shields.io/badge/GitHub-sunilt808-181717?style=for-the-badge&logo=github" />
+  <a href="https://github.com/sunilt808/TraceAcc1">
+    <img src="https://img.shields.io/badge/Explore%20Repo-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore Repository">
   </a>
-  <a href="https://leetcode.com/u/Sunil_T808/">
-    <img src="https://img.shields.io/badge/LeetCode-Sunil__T808-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" />
-  </a>
-  <a href="https://www.geeksforgeeks.org/profile/suniltso14h">
-    <img src="https://img.shields.io/badge/GeeksforGeeks-suniltso14h-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white" />
-  </a>
-  <a href="https://github.com/sunilt808/sunilt808/blob/main/Sunil_T_RESUME.pdf">
-    <img src="https://img.shields.io/badge/Resume-PDF-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" />
-  </a>
-  <a href="mailto:suniltsuni50@gmail.com">
-    <img src="https://img.shields.io/badge/Email-suniltsuni50%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  <a href="https://deepwiki.com/sunilt808/TraceAcc1">
+    <img src="https://img.shields.io/badge/Ask%20DeepWiki-5B5BD6?style=for-the-badge" alt="Ask DeepWiki">
   </a>
 </p>
+
+---
+
+### 🔗 [Noq](https://github.com/sunilt808/Noq-hospital) — Multi-Tenant Hospital Management System
+
+Noq is a **multi-tenant hospital management platform built around smart appointments and digital queue management**. It replaces traditional waiting-line workflows with a role-based system where patients, doctors, hospital managers, and administrators can manage appointments, live queues, medical records, billing, and hospital operations from a unified platform.
+
+The system is built around a **decoupled React + FastAPI + MongoDB Atlas architecture**, with **JWT authentication, RBAC, and isolated hospital data** designed to support multiple hospitals within the same platform.
+
+`React` · `FastAPI` · `MongoDB Atlas` · `JWT` · `Vercel` · `Render`
+
+#### 🏗️ Architecture
+
+```text
+                    React Frontend
+                         ↓
+                Authentication / RBAC
+                         ↓
+                  FastAPI REST API
+                         ↓
+              ┌────────────────────┐
+              │ Application Logic  │
+              │                    │
+              │ Appointments       │
+              │ Queue Management   │
+              │ Medical Records    │
+              │ Billing            │
+              │ Notifications      │
+              └────────────────────┘
+                         ↓
+                 MongoDB Atlas
+                         ↓
+              Hospital / Tenant Data
+```
+
+<p>
+  <a href="https://github.com/sunilt808/Noq-hospital">
+    <img src="https://img.shields.io/badge/Explore%20Repo-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore Repository">
+  </a>
+  <a href="https://noq-hospital.vercel.app/signup">
+    <img src="https://img.shields.io/badge/Live%20Demo-2ea44f?style=for-the-badge" alt="Live Demo">
+  </a>
+  <a href="https://deepwiki.com/sunilt808/Noq-hospital">
+    <img src="https://img.shields.io/badge/Ask%20DeepWiki-5B5BD6?style=for-the-badge" alt="Ask DeepWiki">
+  </a>
+</p>
+
+---
+
+### PlacementOS — AI Placement Intelligence Monitor
+
+PlacementOS is a **personal placement intelligence system** that continuously monitors unstructured college placement information and turns it into structured, actionable opportunities. It combines Telegram monitoring, document extraction, OCR, NLP, eligibility matching, deadline tracking, and automated alerts to reduce the effort of manually searching through placement updates.
+
+Built as a **local-first, self-hosted system** with a FastAPI backend, React dashboard, MongoDB Atlas, Telethon, spaCy, OCR, and an automated opportunity-processing pipeline.
+
+`FastAPI` · `Telethon` · `spaCy` · `MongoDB Atlas` · `React 19` · `Tesseract OCR` · `Vercel` · `Render`
+
+#### 🏗️ Architecture
+
+```text
+Telegram Groups / Historical Import
+                ↓
+          Ingestion Layer
+       (Telethon + Imports)
+                ↓
+       Document / Media Extraction
+        ┌───────┼────────┐
+        ↓       ↓        ↓
+      Text     PDF      Images
+                ↓        ↓
+           OCR / Parsers
+                ↓
+        Intelligence Layer
+     ┌──────────┼──────────┐
+     ↓          ↓          ↓
+   spaCy      Regex     Optional Gemini
+     └──────────┼──────────┘
+                ↓
+       CSE Role Classification
+                ↓
+       Opportunity Engine
+     ┌──────────┼──────────┐
+     ↓          ↓          ↓
+ Deduplication Eligibility Deadlines
+                ↓
+          MongoDB Atlas
+                ↓
+          FastAPI REST API
+                ↓
+         React Dashboard
+                ↓
+       Telegram Notifications
+```
+
+<p>
+  <a href="https://github.com/sunilt808/Placement-os">
+    <img src="https://img.shields.io/badge/Explore%20Repo-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore Repository">
+  </a>
+  <a href="https://placement-os-rust.vercel.app/">
+    <img src="https://img.shields.io/badge/Live%20Demo-2ea44f?style=for-the-badge" alt="Live Demo">
+  </a>
+  <a href="https://deepwiki.com/sunilt808/Placement-os">
+    <img src="https://img.shields.io/badge/Ask%20DeepWiki-5B5BD6?style=for-the-badge" alt="Ask DeepWiki">
+  </a>
+</p>
+
+---
+
+### CutSlot — Elite Salon Management System
+
+CutSlot is a **salon management platform connecting customers, workers, and administrators through a unified booking and operations system**. It brings together appointment management, worker assignment, wallets, reviews, and business reporting while focusing heavily on a polished, modern user experience.
+
+The project combines a **glassmorphic React interface** with a FastAPI backend and a complete **Docker → Kubernetes → Jenkins CI/CD pipeline**, making it a project focused on both frontend engineering and DevOps practices.
+
+`React 19` · `Vite` · `FastAPI` · `SQLite` · `SQLAlchemy` · `Docker` · `Kubernetes` · `Jenkins` · `Terraform`
+
+#### 🏗️ Architecture
+
+```text
+                 React 19 SPA
+                (Vite Frontend)
+                       ↓
+              Role-Based Routing
+        ┌──────────┬──────────┬──────────┐
+        ↓          ↓          ↓
+      Admin      Artisan     Client
+      Portal      Portal     Portal
+        └──────────┬──────────┘
+                   ↓
+              FastAPI API
+                   ↓
+        ┌──────────────────────┐
+        │ Controller / Routes  │
+        │ Auth + Business Logic│
+        └──────────┬───────────┘
+                   ↓
+        SQLAlchemy / Pydantic
+                   ↓
+                SQLite
+                   ↓
+          Docker Containers
+                   ↓
+              Kubernetes
+                   ↓
+          Jenkins CI/CD
+                   ↓
+            AWS EKS / IaC
+             (Terraform)
+```
+
+<p>
+  <a href="https://github.com/sunilt808/Cutslot-4">
+    <img src="https://img.shields.io/badge/Explore%20Repo-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore Repository">
+  </a>
+  <a href="https://deepwiki.com/sunilt808/Cutslot-4">
+    <img src="https://img.shields.io/badge/Ask%20DeepWiki-5B5BD6?style=for-the-badge" alt="Ask DeepWiki">
+  </a>
+</p>
+
+---
+
+### 🔗 [BookSwap](https://github.com/sunilt808/BookSwap) — Android Book Exchange Platform
+
+BookSwap is an **Android-based book exchange platform designed for students to discover, list, borrow, and exchange books within their college community**. It provides a simple digital marketplace for peer-to-peer book sharing while supporting authentication, user roles, and administrative control.
+
+The application follows a clean **MVC architecture** with Java and SQLite, keeping the project focused on structured Android development and local data management.
+
+`Android` · `Java` · `SQLite` · `MVC` · `JWT`
+
+#### 🏗️ Architecture
+
+```text
+             Android Application
+                     ↓
+          Activities / Controllers
+                     ↓
+             Adapters + Logic
+                     ↓
+                  Models
+                     ↓
+                 SQLite
+                     ↓
+          Local Application Data
+```
+
+<p>
+  <a href="https://github.com/sunilt808/BookSwap">
+    <img src="https://img.shields.io/badge/Explore%20Repo-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore Repository">
+  </a>
+</p>
+
+---
+
+## 📚 Currently Learning
+
+Data Structures and Algorithms · System Design · Scalable Backend Architecture · DevOps & CI/CD · Cloud Deployment · ML-powered Software Systems
+
+## 🎯 Open To
+
+Roles in **Backend Engineering**, **Full-Stack Development**, and **Distributed/Scalable Systems** — especially teams working on system design, DevOps, or graph-driven problems.
+
+---
+
+## 🤝 Let's Connect
+
+Always up for talking backend systems, system design, DSA, hackathons, or open-source ideas.
+
+[![GitHub](https://img.shields.io/badge/GitHub-sunilt808-181717?style=for-the-badge\&logo=github)](https://github.com/sunilt808)
+[![LeetCode](https://img.shields.io/badge/LeetCode-Sunil__T808-FFA116?style=for-the-badge\&logo=leetcode\&logoColor=white)](https://leetcode.com/u/Sunil_T808/)
+[![GeeksforGeeks](https://img.shields.io/badge/GeeksforGeeks-suniltso14h-2F8D46?style=for-the-badge\&logo=geeksforgeeks\&logoColor=white)](https://www.geeksforgeeks.org/profile/suniltso14h)
+[![Resume](https://img.shields.io/badge/Resume-PDF-red?style=for-the-badge\&logo=adobeacrobatreader\&logoColor=white)](https://github.com/sunilt808/sunilt808/blob/main/Sunil_T_RESUME.pdf)
+[![Email](https://img.shields.io/badge/Email-suniltsuni50%40gmail.com-D14836?style=for-the-badge\&logo=gmail\&logoColor=white)](mailto:suniltsuni50@gmail.com)
