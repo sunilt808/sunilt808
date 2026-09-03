@@ -14,9 +14,9 @@
 
 ## 👨‍💻 About Me
 
-I'm a Computer Science & Engineering undergraduate at **Dayananda Sagar College of Engineering**, interested in building software systems that go beyond basic CRUD applications.
+I'm a Computer Science & Engineering undergraduate at **Dayananda Sagar College of Engineering**, interested in building software systems that solve practical problems beyond basic CRUD applications.
 
-My current focus is on **Data Structures & Algorithms, backend engineering, system design, and DevOps**, while working on projects involving real-world workflows, security, data processing, and graph analytics.
+My current focus is on **Data Structures & Algorithms, backend engineering, system design, and DevOps**, while building projects involving real-world workflows, security, data processing, and graph analytics.
 
 * 🎓 B.E. Computer Science & Engineering — **CGPA: 8.38**
 * 🧠 Currently focusing on **DSA, System Design, Backend Architecture & DevOps**
@@ -50,7 +50,7 @@ My current focus is on **Data Structures & Algorithms, backend engineering, syst
 ### Databases
 
 <p>
-  <img src="https://skillicons.dev/icons?i=mongodb,mysql,sqlite" />
+  <img src="https://skillicons.dev/icons?i=mongodb,mysql,sqlite,postgres" />
 </p>
 
 ### DevOps & Tools
@@ -67,47 +67,80 @@ My current focus is on **Data Structures & Algorithms, backend engineering, syst
 
 # 🚀 Featured Projects
 
-## 🔍 TraceAcc — Graph-Based AML & Money-Muling Detection
+## 🔎 TraceAcc Pro — Enterprise AML Operations Platform
 
-[![GitHub](https://img.shields.io/badge/GitHub-TraceAcc-181717?style=flat-square\&logo=github)](https://github.com/sunilt808/TraceAcc)
-
-A graph-based **Anti-Money Laundering (AML) and money-muling detection system** that analyzes transaction relationships and identifies suspicious financial behavior through graph algorithms, rule-based detection, and machine-learning techniques.
-
-### Key Capabilities
-
-* 🔄 Transaction graph construction and analysis
-* 🕸️ Graph-based suspicious-pattern detection
-* 🔁 Cycle detection for potential transaction rings
-* 📡 Fan-in / fan-out analysis for suspicious hubs
-* ⛓️ Layering-chain analysis
-* ⚡ Burst-activity detection
-* 🤖 Unsupervised anomaly detection
-* 📊 Account-level suspicion scoring
-* 🔎 Interactive graph-based investigation
-
-### Architecture
-
-```text
-Transaction Data
-       ↓
-Graph Construction
-       ↓
-Graph Analysis + Detection Pipeline
-       ↓
-ML Anomaly Detection
-       ↓
-Risk / Suspicion Scoring
-       ↓
-FastAPI Backend
-       ↓
-React Investigation Dashboard
-```
-
-`Python` · `FastAPI` · `NetworkX` · `scikit-learn` · `React` · `Cytoscape.js` · `Graph Algorithms`
+[![GitHub](https://img.shields.io/badge/GitHub-TraceAcc%20Pro-181717?style=flat-square\&logo=github)](https://github.com/sunilt808/TraceAcc1)
 
 <a href="https://deepwiki.com/sunilt808/TraceAcc1">
   <img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki" />
 </a>
+
+An **Anti-Money Laundering (AML) operations platform** connecting client intake, technical transaction analysis, investigation, case management, and governed report release through a single workflow.
+
+### 🔬 Detection & Intelligence
+
+* 🕸️ Transaction graph analysis using **NetworkX**
+* 🔄 Cycle detection for potential transaction rings
+* 📡 Fan-in / fan-out hub detection
+* ⛓️ Layering-chain detection
+* ⚡ Burst-activity detection
+* 🧠 Behavioural and temporal analysis
+* 👥 Community and centrality analysis
+* 🤖 Isolation Forest, LOF and DBSCAN anomaly detection
+* 🧬 **DC-LCG dual-view Graph Neural Network using PyTorch**
+* 📊 Hybrid **0–100 risk scoring**
+* 🔎 Intel Hub with account dossiers, similar-account search and money-flow paths
+* 🚨 Automated alerts and investigator case escalation
+
+### 🏢 Governed Workflow
+
+```text
+Client Portal
+     ↓
+Service Request
+     ↓
+Admin Workspace
+     ↓
+TraceLab
+     ├── Transaction Graph
+     ├── 15-Pattern Detection
+     ├── ML Anomaly Detection
+     └── DC-LCG GNN
+     ↓
+Technical Report Draft
+     ↓
+Risk Alerts
+     ↓
+InvoSpace Investigation
+     ├── Cases
+     ├── Evidence
+     ├── Notes / Findings
+     └── Investigation Report
+     ↓
+Admin Review
+     ↓
+SHA-256 Sealed Report
+     ↓
+Client Portal
+```
+
+### ⚙️ Architecture
+
+```text
+React 18 + Vite
+        ↓
+FastAPI REST API
+        ↓
+Detection & Intelligence Layer
+        ↓
+SQLAlchemy ORM
+        ↓
+SQLite / PostgreSQL
+```
+
+The platform contains **15 automated detection patterns**, a hybrid detection engine, versioned DC-LCG model artifacts, role/workspace-based access control, audit trails, technical reports, investigation cases and controlled client release.
+
+`Python` · `FastAPI` · `NetworkX` · `PyTorch` · `scikit-learn` · `React 18` · `Vite` · `Cytoscape.js` · `SQLAlchemy` · `PostgreSQL` · `SQLite` · `JWT` · `RBAC`
 
 ---
 
@@ -116,51 +149,56 @@ React Investigation Dashboard
 [![GitHub](https://img.shields.io/badge/GitHub-Noq--Hospital-181717?style=flat-square\&logo=github)](https://github.com/sunilt808/Noq-hospital)
 [![Live Demo](https://img.shields.io/badge/Live-Demo-2ea44f?style=flat-square)](https://noq-hospital.vercel.app/signup)
 
-A **multi-tenant hospital management platform** built around appointment, queue, token and hospital-operation workflows.
-
-### Key Features
-
-* 🏥 Multi-tenant hospital architecture
-* 🎫 Appointment and token management
-* ⏱️ Queue and token lifecycle management
-* 👨‍⚕️ Doctor and patient workflows
-* 💰 Billing workflows
-* 📋 Medical records and prescriptions
-* 🔔 Notifications
-* 🛡️ JWT authentication
-* 🔐 Role-based access control
-* 📝 Audit logging
-
-### Roles
-
-```text
-System Admin
-     ↓
-Hospital Manager
-     ↓
-Doctor
-     ↓
-Patient
-```
-
-The application uses a decoupled **React frontend + FastAPI backend + MongoDB Atlas** architecture.
-
-`React` · `Vite` · `FastAPI` · `MongoDB Atlas` · `JWT` · `PBKDF2` · `RBAC` · `Vercel` · `Render`
-
 <a href="https://deepwiki.com/sunilt808/Noq-hospital">
   <img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki" />
 </a>
+
+A **full-stack hospital queue and appointment platform** designed to replace traditional physical queues with a digital token-based workflow.
+
+### Key Features
+
+* 🏥 Multi-hospital / multi-tenant architecture
+* 📅 Appointment scheduling
+* 🎫 Digital token management
+* ⏱️ Smart queue management
+* 👨‍⚕️ Doctor workflows
+* 👤 Patient portal
+* 💳 Billing and revenue management
+* 📋 Medical records and prescriptions
+* 🔔 Notifications
+* ⭐ Reviews and complaints
+* 🚫 Patient no-show disciplinary system
+* 📝 Audit logging
+* 🔐 JWT authentication and RBAC
+
+### Role-Based Workflow
+
+```text
+Admin
+  ↓
+Hospital Manager
+  ↓
+Doctor
+  ↓
+Patient
+```
+
+Patients can book appointments, track token status, access records and pay bills. Doctors manage consultation queues and prescriptions, while Hospital Managers handle infrastructure, assignments, revenue and notifications.
+
+The system uses a decoupled **React + Vite frontend**, **FastAPI REST backend**, and **MongoDB** database, deployed through Vercel and Render.
+
+`React` · `Vite` · `FastAPI` · `Uvicorn` · `MongoDB` · `JWT` · `PBKDF2` · `RBAC` · `Vercel` · `Render`
 
 ---
 
 ## 📡 PlacementOS — AI Placement Intelligence Monitor
 
-![Private](https://img.shields.io/badge/repository-private-lightgrey?style=flat-square)
+![Private](https://img.shields.io/badge/Repository-Private-lightgrey?style=flat-square)
 [![Live Demo](https://img.shields.io/badge/Live-Demo-2ea44f?style=flat-square)](https://placement-os-rust.vercel.app/)
 
 A personal placement intelligence system that transforms unstructured college placement updates into **structured, actionable opportunities**.
 
-The system monitors placement communications, extracts job information from messages and documents, evaluates eligibility, tracks deadlines, and reduces duplicate announcements.
+It monitors placement communications, extracts job information from messages and documents, evaluates eligibility, tracks deadlines, and deduplicates repeated company announcements.
 
 ### Processing Pipeline
 
@@ -177,14 +215,16 @@ Eligibility Matching
         ↓
 Deduplication + Deadline Tracking
         ↓
-MongoDB
+MongoDB Atlas
         ↓
 FastAPI
         ↓
-React Dashboard + Telegram Alerts
+React Dashboard
+        ↓
+Telegram Alerts
 ```
 
-The system follows a **recall-first approach**, prioritizing the discovery of potential opportunities before filtering them.
+The system follows a **recall-first approach**, prioritizing discovery of potential opportunities before applying relevance and eligibility filtering.
 
 `FastAPI` · `Telethon` · `spaCy` · `Tesseract OCR` · `MongoDB Atlas` · `React 19` · `Vercel` · `Render`
 
@@ -192,17 +232,17 @@ The system follows a **recall-first approach**, prioritizing the discovery of po
 
 ## 💇 CutSlot — Elite Salon Management System
 
-![Private](https://img.shields.io/badge/repository-private-lightgrey?style=flat-square)
+![Private](https://img.shields.io/badge/Repository-Private-lightgrey?style=flat-square)
 
 A salon management platform connecting **Guests, Artisans and Directorate/Admins** through role-specific workflows.
 
-The project focuses on **frontend engineering, application architecture and DevOps**, with a React interface, FastAPI backend and containerized CI/CD pipeline.
+The project focuses on **frontend engineering, application architecture and DevOps**, combining a React interface with a FastAPI backend and containerized CI/CD infrastructure.
 
 ### Key Features
 
 * 📅 Appointment booking
 * 👤 Role-based dashboards
-* 👨‍🔧 Artisan management
+* 👨‍🔧 Artisan / worker management
 * 💳 Wallet workflows
 * ⭐ Reviews
 * 📊 Revenue and audit dashboards
@@ -215,11 +255,11 @@ The project focuses on **frontend engineering, application architecture and DevO
 
 ```text
 React Frontend
-       ↓
+      ↓
 FastAPI Controllers
-       ↓
-SQLAlchemy Models
-       ↓
+      ↓
+SQLAlchemy
+      ↓
 SQLite
 ```
 
@@ -231,31 +271,43 @@ SQLite
 
 [![GitHub](https://img.shields.io/badge/GitHub-BookSwap-181717?style=flat-square\&logo=github)](https://github.com/sunilt808/BookSwap)
 
-An Android application designed for students to **list, discover, borrow and exchange books** within their college community.
+An Android application that helps students **exchange, donate, borrow and share books** within their college community.
 
 ### Key Features
 
-* 📚 Book listing and management
-* 🔍 Book discovery
-* 🔄 Exchange workflows
-* 👤 User management
-* 🛡️ Admin functionality
-* 🔐 Authentication
-* 🗄️ Local database storage
+* 🔐 JWT authentication
+* 📚 Add and manage books
+* 🔍 Browse, search and filter
+* 🔄 Exchange requests
+* 👤 Profile management
+* 🛡️ Admin dashboard
+* 📋 Book CRUD
+* 🗄️ SQLite storage
 
-### Architecture
+### MVC Architecture
 
 ```text
-Activities / Controllers
-          ↓
-Application Logic
-          ↓
-Models
-          ↓
-SQLite
+Model
+ ├── User
+ ├── Book
+ ├── Exchange
+ └── SQLite DB Helper
+
+View
+ ├── XML Screens
+ ├── RecyclerViews
+ └── Dialogs
+
+Controller
+ ├── Activities
+ ├── Adapters
+ ├── Auth Manager
+ └── Exchange Logic
 ```
 
-`Java` · `Android` · `XML` · `SQLite` · `JWT` · `MVC`
+The repository documents BookSwap as a Java/XML/SQLite Android application with JWT authentication, User/Admin roles and MVC organization.
+
+`Java` · `Android` · `XML` · `SQLite` · `JWT` · `MVC` · `Android Studio`
 
 ---
 
@@ -277,7 +329,7 @@ I'm interested in opportunities involving:
 
 **Backend Engineering · Full-Stack Development · Software Engineering · System Design · DevOps**
 
-I particularly enjoy working on problems involving **APIs, data processing, authentication, graph algorithms and complete end-to-end systems.**
+I particularly enjoy working on problems involving **APIs, data processing, authentication, graph algorithms, databases and complete end-to-end systems.**
 
 ---
 
