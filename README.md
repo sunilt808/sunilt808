@@ -43,46 +43,151 @@ I'm a Computer Science & Engineering undergraduate at **Dayananda Sagar College 
 
 ## 🚀 Featured Projects
 
-### 🔗 [TraceAcc1](https://github.com/sunilt808/TraceAcc1) — Graph-Based AML & Money-Muling Detection Engine
+### 🔗 [TraceAcc1](https://github.com/sunilt808/TraceAcc1) — Enterprise AML Operations & Money-Muling Detection Platform
 
-*Graph theory meets fraud detection.* TraceAcc is an **AML operations and money-muling detection platform** that analyzes financial transactions as graphs to uncover suspicious account relationships and behavioral patterns. It combines graph-based detection with machine-learning techniques to generate risk intelligence and help investigators explore potentially suspicious transaction networks through an interactive dashboard.
+*Graph intelligence meets governed financial investigation.*
 
-Built with **FastAPI, NetworkX, scikit-learn, PyTorch, React, and Cytoscape.js**, bringing together graph algorithms, anomaly detection, and visual investigation into one system.
+TraceAcc Pro is an **AML operations platform** that connects client intake, technical AML analysis, investigation, report governance, and final client delivery through one controlled workflow. Instead of treating fraud detection as an isolated ML problem, the platform separates technical analysis from investigation while maintaining traceability across every handoff.
 
-`Python` · `FastAPI` · `NetworkX` · `Graph Theory` · `scikit-learn` · `PyTorch` · `React` · `Cytoscape.js`
+Clients submit investigation requests and transaction datasets through the Client Portal. Admins review and assign approved requests to **TraceLab**, where graph-based detection, behavioural and temporal analysis, anomaly detection, a 15-pattern suite, and the DC-LCG dual-view GNN generate risk intelligence and technical findings. Suspicious results can then be escalated into **InvoSpace**, where investigators manage cases, evidence, hypotheses, findings, account intelligence, and investigation reports. Admin review completes the workflow by sealing approved reports before they become visible to the client.
 
-#### 🏗️ Architecture
+### 🔄 End-to-End Governed Workflow
 
 ```text
-Transaction Data / CSV
-        ↓
-Data Parsing & Validation
-        ↓
-Transaction Graph
-(NetworkX)
-        ↓
-┌───────────────────────────────┐
-│ Graph-Based Detection         │
-│ • Cycles                      │
-│ • Fan-In / Fan-Out            │
-│ • Layering Chains              │
-│ • Burst Activity              │
-└───────────────────────────────┘
-        +
-┌───────────────────────────────┐
-│ ML Anomaly Detection          │
-│ • Isolation Forest             │
-│ • LOF                          │
-│ • DBSCAN                       │
-└───────────────────────────────┘
-        ↓
-Risk Intelligence / Scoring
-        ↓
-FastAPI REST API
-        ↓
-React + Cytoscape.js
-Investigation Dashboard
+                              TRACEACC PRO
+                                   │
+                                   ▼
+                              ┌─────────┐
+                              │ CLIENT  │
+                              └────┬────┘
+                                   │
+                         Request + Dataset
+                                   │
+                                   ▼
+                              ┌─────────┐
+                              │  ADMIN  │
+                              │ Intake  │
+                              └────┬────┘
+                                   │
+                         Accept / Reject
+                         Assign Workspace
+                                   │
+                 ┌─────────────────┴─────────────────┐
+                 ▼                                   ▼
+          ┌──────────────┐                    ┌──────────────┐
+          │   TRACELAB   │                    │  INVOSPACE   │
+          │ AML Analysis │────── Alerts ─────►│ Investigation│
+          └──────┬───────┘                    └──────┬───────┘
+                 │                                   │
+                 │                                   │
+                 ▼                                   ▼
+          Detection Engine                     Case Management
+          Risk Intelligence                    Evidence
+          Technical Findings                   Hypotheses
+                                               Findings
+                 │                                   │
+                 └─────────────────┬─────────────────┘
+                                   │
+                                   ▼
+                         Investigation Report
+                                   │
+                                   ▼
+                              ┌─────────┐
+                              │  ADMIN  │
+                              │ Review  │
+                              └────┬────┘
+                                   │
+                            SHA-256 Seal
+                                   │
+                                   ▼
+                              FINAL REPORT
+                                   │
+                                   ▼
+                              ┌─────────┐
+                              │ CLIENT  │
+                              │ Release │
+                              └─────────┘
 ```
+
+### 🧠 Detection & Risk Intelligence
+
+```text
+Transaction Dataset
+        │
+        ▼
+Transaction Graph
+(NetworkX DiGraph)
+        │
+        ▼
+┌─────────────────────────────────────────┐
+│          Detection & Analysis           │
+│                                         │
+│  Graph Heuristics                       │
+│  • Cycle Detection                      │
+│  • Fan-In / Fan-Out                    │
+│  • Layering Chains                      │
+│  • Burst Activity                       │
+│                                         │
+│  Behavioural / Temporal Signals         │
+│  • Account Profiles                     │
+│  • Velocity                              │
+│  • Temporal Patterns                    │
+│  • Community / Centrality / Motifs      │
+│                                         │
+│  ML Anomaly Detection                   │
+│  • Isolation Forest                     │
+│  • LOF                                  │
+│  • DBSCAN                               │
+│                                         │
+│  15-Pattern Detection Suite             │
+│                                         │
+│  DC-LCG Dual-View GNN                   │
+└──────────────────────┬──────────────────┘
+                       │
+                       ▼
+                 Hybrid Engine
+                   0 – 100
+                       │
+             ┌─────────┴─────────┐
+             ▼                   ▼
+           Alerts            Findings /
+                              Technical
+                               Report
+             │                   │
+             └─────────┬─────────┘
+                       ▼
+                   InvoSpace
+```
+
+### 🔐 Governance & Traceability
+
+```text
+Client Request
+      ↓
+Admin Acceptance
+      ↓
+Workspace Assignment
+      ↓
+TraceLab Analysis
+      ↓
+Risk Intelligence
+      ↓
+Alert Escalation
+      ↓
+InvoSpace Case
+      ↓
+Investigation
+      ↓
+Admin Review
+      ↓
+SHA-256 Report Seal
+      ↓
+Client Release
+```
+
+Every major workflow transition is tracked through the platform's workflow, activity timeline, and audit mechanisms. Technical analysis results are also persisted and connected to reports, alerts, cases, and the investigation workflow.
+
+`Python` · `FastAPI` · `NetworkX` · `scikit-learn` · `PyTorch` · `React` · `Cytoscape.js` · `SQLAlchemy` · `SQLite/PostgreSQL`
 
 <p>
   <a href="https://github.com/sunilt808/TraceAcc1">
@@ -99,33 +204,77 @@ Investigation Dashboard
 
 Noq is a **multi-tenant hospital management platform built around smart appointments and digital queue management**. It replaces traditional waiting-line workflows with a role-based system where patients, doctors, hospital managers, and administrators can manage appointments, live queues, medical records, billing, and hospital operations from a unified platform.
 
-The system is built around a **decoupled React + FastAPI + MongoDB Atlas architecture**, with **JWT authentication, RBAC, and isolated hospital data** designed to support multiple hospitals within the same platform.
+The system is designed around isolated hospital data and role-specific access, allowing multiple hospitals to operate within the same platform while maintaining separation between their operational data.
 
-`React` · `FastAPI` · `MongoDB Atlas` · `JWT` · `Vercel` · `Render`
-
-#### 🏗️ Architecture
+### 🏥 Hospital Operations Flow
 
 ```text
-                    React Frontend
-                         ↓
-                Authentication / RBAC
-                         ↓
-                  FastAPI REST API
-                         ↓
-              ┌────────────────────┐
-              │ Application Logic  │
-              │                    │
-              │ Appointments       │
-              │ Queue Management   │
-              │ Medical Records    │
-              │ Billing            │
-              │ Notifications      │
-              └────────────────────┘
-                         ↓
-                 MongoDB Atlas
-                         ↓
-              Hospital / Tenant Data
+                              NOQ HOSPITAL
+                                   │
+                                   ▼
+                              ┌─────────┐
+                              │ PATIENT │
+                              └────┬────┘
+                                   │
+                         Select Hospital
+                                   │
+                                   ▼
+                         Book Appointment
+                                   │
+                                   ▼
+                           Digital Queue
+                                   │
+                          Live Token Status
+                                   │
+                                   ▼
+                              ┌─────────┐
+                              │ DOCTOR  │
+                              └────┬────┘
+                                   │
+                         Consultation
+                                   │
+                     ┌─────────────┼─────────────┐
+                     ▼             ▼             ▼
+                Prescription   Medical Record   Billing
+                                   │
+                                   ▼
+                         ┌────────────────┐
+                         │ Hospital       │
+                         │ Manager        │
+                         └───────┬────────┘
+                                 │
+                    Hospital Operations
+                    Doctors / Patients
+                    Appointments / Queue
+                                 │
+                                 ▼
+                         ┌────────────────┐
+                         │ System Admin   │
+                         │ Platform       │
+                         │ Management     │
+                         └────────────────┘
 ```
+
+### ⚙️ Technical Foundation
+
+```text
+Patient / Doctor / Manager / Admin
+                │
+                ▼
+        React + Vite Frontend
+                │
+          JWT + RBAC
+                │
+                ▼
+          FastAPI Backend
+                │
+                ▼
+          MongoDB Atlas
+```
+
+Built with a decoupled **React + FastAPI + MongoDB Atlas architecture**, with JWT authentication, role-based access control, and multi-tenant data separation.
+
+`React` · `FastAPI` · `MongoDB Atlas` · `JWT` · `RBAC` · `Vercel` · `Render`
 
 <p>
   <a href="https://github.com/sunilt808/Noq-hospital">
@@ -147,44 +296,56 @@ PlacementOS is a **personal placement intelligence system** that continuously mo
 
 Built as a **local-first, self-hosted system** with a FastAPI backend, React dashboard, MongoDB Atlas, Telethon, spaCy, OCR, and an automated opportunity-processing pipeline.
 
-`FastAPI` · `Telethon` · `spaCy` · `MongoDB Atlas` · `React 19` · `Tesseract OCR` · `Vercel` · `Render`
-
-#### 🏗️ Architecture
+### 📡 Placement Intelligence Flow
 
 ```text
-Telegram Groups / Historical Import
-                ↓
-          Ingestion Layer
-       (Telethon + Imports)
-                ↓
-       Document / Media Extraction
-        ┌───────┼────────┐
-        ↓       ↓        ↓
-      Text     PDF      Images
-                ↓        ↓
-           OCR / Parsers
-                ↓
-        Intelligence Layer
-     ┌──────────┼──────────┐
-     ↓          ↓          ↓
-   spaCy      Regex     Optional Gemini
-     └──────────┼──────────┘
-                ↓
-       CSE Role Classification
-                ↓
-       Opportunity Engine
-     ┌──────────┼──────────┐
-     ↓          ↓          ↓
- Deduplication Eligibility Deadlines
-                ↓
-          MongoDB Atlas
-                ↓
-          FastAPI REST API
-                ↓
-         React Dashboard
-                ↓
-       Telegram Notifications
+Placement Sources
+      │
+      ├── Telegram Messages
+      ├── PDFs / DOCX
+      ├── Excel Files
+      ├── Images / OCR
+      └── Google Forms
+      │
+      ▼
+┌───────────────────────┐
+│ Ingestion & Historical│
+│ Import Pipeline       │
+└───────────┬───────────┘
+            │
+            ▼
+     Document / Media
+       Extraction
+            │
+            ▼
+      NLP Processing
+   spaCy + Regex + Dates
+            │
+            ▼
+    Opportunity Engine
+            │
+      ┌─────┼─────────────┐
+      ▼     ▼             ▼
+ Eligibility Dedup      Deadlines
+ Matching    + Merge     Tracking
+      │     │             │
+      └─────┼─────────────┘
+            ▼
+       MongoDB Atlas
+            │
+            ▼
+       FastAPI Backend
+            │
+            ▼
+      React Dashboard
+            │
+            ▼
+    Telegram Notifications
 ```
+
+The system follows a **recall-first philosophy**: missing a genuine placement opportunity is treated as more costly than producing an occasional false alert. The core extraction and classification pipeline is designed to operate locally, with optional AI escalation where required.
+
+`FastAPI` · `Telethon` · `spaCy` · `Tesseract OCR` · `MongoDB Atlas` · `React` · `Vercel` · `Render`
 
 <p>
   <a href="https://github.com/sunilt808/Placement-os">
@@ -206,41 +367,69 @@ CutSlot is a **salon management platform connecting customers, workers, and admi
 
 The project combines a **glassmorphic React interface** with a FastAPI backend and a complete **Docker → Kubernetes → Jenkins CI/CD pipeline**, making it a project focused on both frontend engineering and DevOps practices.
 
-`React 19` · `Vite` · `FastAPI` · `SQLite` · `SQLAlchemy` · `Docker` · `Kubernetes` · `Jenkins` · `Terraform`
-
-#### 🏗️ Architecture
+### ✂️ Salon Operations Flow
 
 ```text
-                 React 19 SPA
-                (Vite Frontend)
-                       ↓
-              Role-Based Routing
-        ┌──────────┬──────────┬──────────┐
-        ↓          ↓          ↓
-      Admin      Artisan     Client
-      Portal      Portal     Portal
-        └──────────┬──────────┘
-                   ↓
-              FastAPI API
-                   ↓
-        ┌──────────────────────┐
-        │ Controller / Routes  │
-        │ Auth + Business Logic│
-        └──────────┬───────────┘
-                   ↓
-        SQLAlchemy / Pydantic
-                   ↓
-                SQLite
-                   ↓
-          Docker Containers
-                   ↓
-              Kubernetes
-                   ↓
-          Jenkins CI/CD
-                   ↓
-            AWS EKS / IaC
-             (Terraform)
+                         CUTSLOT
+                            │
+          ┌─────────────────┼─────────────────┐
+          ▼                 ▼                 ▼
+   ELITE CLIENT       SKILLED ARTISAN    DIRECTORATE
+      (Guest)              (Staff)          (Admin)
+          │                 │                 │
+          │                 │                 │
+     Browse / Book      Receive Assignment   Manage Services
+     Services           Floor / Queue        Manage Artisans
+     Wallet             Perform Service      Revenue
+     Subscription       Update Status         Analytics
+     Feedback           Performance           Audit
+          │                 │                 │
+          └─────────────────┼─────────────────┘
+                            │
+                            ▼
+                    Booking Lifecycle
+                            │
+                            ▼
+                    Service Completion
+                            │
+                            ▼
+                     Wallet / Revenue
+                            │
+                            ▼
+                    Verified Feedback
 ```
+
+### ⚙️ Technical Foundation
+
+```text
+Role-Based React Application
+            │
+            ▼
+      FastAPI Backend
+            │
+       SQLAlchemy ORM
+            │
+            ▼
+          SQLite
+```
+
+The project also includes a production-oriented DevOps workflow:
+
+```text
+Code
+ ↓
+Jenkins Pipeline
+ ↓
+Docker Build
+ ↓
+Container
+ ↓
+Kubernetes
+ ↓
+Deployment
+```
+
+`React 19` · `Vite` · `FastAPI` · `SQLite` · `SQLAlchemy` · `Docker` · `Kubernetes` · `Jenkins` · `Terraform`
 
 <p>
   <a href="https://github.com/sunilt808/Cutslot-4">
@@ -255,27 +444,78 @@ The project combines a **glassmorphic React interface** with a FastAPI backend a
 
 ### 🔗 [BookSwap](https://github.com/sunilt808/BookSwap) — Android Book Exchange Platform
 
-BookSwap is an **Android-based book exchange platform designed for students to discover, list, borrow, and exchange books within their college community**. It provides a simple digital marketplace for peer-to-peer book sharing while supporting authentication, user roles, and administrative control.
+BookSwap is an **Android-based book exchange platform designed for students to discover, list, borrow, donate, and exchange books within their college community**. It provides a simple digital marketplace for peer-to-peer book sharing while supporting authentication, user roles, and administrative control.
 
-The application follows a clean **MVC architecture** with Java and SQLite, keeping the project focused on structured Android development and local data management.
-
-`Android` · `Java` · `SQLite` · `MVC` · `JWT`
-
-#### 🏗️ Architecture
+### 📚 Book Exchange Flow
 
 ```text
-             Android Application
-                     ↓
-          Activities / Controllers
-                     ↓
-             Adapters + Logic
-                     ↓
-                  Models
-                     ↓
-                 SQLite
-                     ↓
-          Local Application Data
+                         BOOKSWAP
+                            │
+                            ▼
+                         USER
+                            │
+                    JWT Authentication
+                            │
+              ┌─────────────┴─────────────┐
+              ▼                           ▼
+        Browse / Search              Add / Manage
+           Books                       Books
+              │                           │
+              └─────────────┬─────────────┘
+                            │
+                            ▼
+                     Exchange Request
+                            │
+                            ▼
+                       Book Owner
+                            │
+                     Accept / Manage
+                            │
+                            ▼
+                     Book Exchange
+                            │
+                            ▼
+                       Completed
+                            │
+                            ▼
+                         ADMIN
+                            │
+              ┌─────────────┼─────────────┐
+              ▼             ▼             ▼
+           Users          Books         Reports
 ```
+
+### 🏗️ MVC Architecture
+
+```text
+                  ┌──────────────┐
+                  │     VIEW     │
+                  │ XML Screens  │
+                  │ RecyclerView │
+                  │ Dialogs      │
+                  └──────┬───────┘
+                         │
+                         ▼
+                  ┌──────────────┐
+                  │  CONTROLLER  │
+                  │ Activities   │
+                  │ Adapters     │
+                  │ Auth Manager │
+                  │ Exchange     │
+                  │ Logic        │
+                  └──────┬───────┘
+                         │
+                         ▼
+                  ┌──────────────┐
+                  │    MODEL     │
+                  │ User         │
+                  │ Book         │
+                  │ Exchange     │
+                  │ SQLite DB    │
+                  └──────────────┘
+```
+
+`Android` · `Java` · `XML` · `SQLite` · `JWT` · `MVC` · `Android Studio`
 
 <p>
   <a href="https://github.com/sunilt808/BookSwap">
