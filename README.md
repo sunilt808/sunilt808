@@ -8,7 +8,7 @@
 
 I'm a Computer Science & Engineering undergraduate at **Dayananda Sagar College of Engineering**, building practical software systems across the stack — with a growing focus on **backend engineering, system design, scalable architecture, and graph algorithms**.
 
-I like projects that force me to think about **data modeling, security, automation, correctness, and real-world workflows**, not just CRUD.
+I like projects that force me to think about **data modeling, security, automation, correctness, and real-world workflows**.
 
 * 🎓 B.E. CSE, Dayananda Sagar College of Engineering — **CGPA 8.38**
 * 🧠 Currently deep in **DSA, System Design, and scalable backend architecture**
