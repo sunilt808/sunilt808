@@ -1,4 +1,5 @@
 <h1 align="center">Hi, I'm Sunil T 👋</h1>
+
 <h3 align="center">Full-Stack Developer · Backend Engineer · CSE Undergraduate</h3>
 
 <p align="center">
@@ -297,7 +298,7 @@ React 19 + Vite
     <img src="https://img.shields.io/badge/🧠%20DeepWiki-5B5BD6?style=for-the-badge" alt="Explore CutSlot with DeepWiki">
   </a>
 </p>
----
+
 ---
 
 ## 🤖 [myagent](https://github.com/sunilt808/Myagent) — Multi-Provider AI Coding Agent
@@ -362,7 +363,7 @@ The agent also supports **file search, reading, writing, editing, patching, term
   </a>
 </p>
 
---- 
+---
 
 ## 📚 Currently Learning
 
