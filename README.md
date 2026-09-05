@@ -298,11 +298,6 @@ React 19 + Vite
   </a>
 </p>
 ---
-
----
-
-now gobve me  with this including thata rch ---
-
 ---
 
 ## 🤖 [myagent](https://github.com/sunilt808/Myagent) — Multi-Provider AI Coding Agent
@@ -367,7 +362,7 @@ The agent also supports **file search, reading, writing, editing, patching, term
   </a>
 </p>
 
---- all at a time inside editor
+--- 
 
 ## 📚 Currently Learning
 
