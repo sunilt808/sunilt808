@@ -301,7 +301,13 @@ React 19 + Vite
 
 ---
 
-## 🤖 [myagent](https://github.com/sunilt808/Myagent) — Multi-Provider AI Coding Agent [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/sunilt808/Myagent)
+now gobve me  with this including thata rch ---
+
+---
+
+## 🤖 [myagent](https://github.com/sunilt808/Myagent) — Multi-Provider AI Coding Agent
+
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/sunilt808/Myagent)
 
 **A terminal-based AI coding agent designed to eliminate LLM provider lock-in.**
 
@@ -346,6 +352,7 @@ The agent also supports **file search, reading, writing, editing, patching, term
 ┌─────────────────────────────────────────────────────────────┐
 │                       LLM PROVIDERS                         │
 └─────────────────────────────────────────────────────────────┘
+```
 
 **Key Engineering:** `Provider Isolation` · `Live Model Discovery` · `Provider-Scoped Caching` · `Model Resolution` · `Bounded Retries` · `Error Classification` · `Tool Permissions` · `Session Persistence`
 
@@ -360,8 +367,7 @@ The agent also supports **file search, reading, writing, editing, patching, term
   </a>
 </p>
 
----
-
+--- all at a time inside editor
 
 ## 📚 Currently Learning
 
