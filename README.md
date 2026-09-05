@@ -297,52 +297,31 @@ React 19 + Vite
     <img src="https://img.shields.io/badge/🧠%20DeepWiki-5B5BD6?style=for-the-badge" alt="Explore CutSlot with DeepWiki">
   </a>
 </p>
-
 ---
 
-## 📚 [BookSwap](https://github.com/sunilt808/BookSwap) — Android Book Exchange Platform
+## 🤖 [myagent](https://github.com/sunilt808/Myagent) — Multi-Provider AI Coding Agent [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/sunilt808/Myagent)
 
-**A peer-to-peer campus book exchange application built around real exchange workflows.**
+**A terminal-based AI coding agent designed to eliminate LLM provider lock-in.**
 
-BookSwap allows students to **list, discover, borrow, donate, and exchange books** within their college community.
+myagent provides a unified coding workflow across **6+ LLM providers**, with **provider isolation, live model discovery, provider-scoped caching, intelligent model selection, and explicit provider/model switching**.
 
-The application implements authentication, user/admin roles, book management, exchange requests, and owner approval using an MVC-based Android architecture.
+The agent also supports **file search, reading, writing, editing, patching, terminal execution, permission controls, persistent sessions, centralized error classification, and bounded retries** for reliable developer workflows.
 
-```text
-User
- ↓
-Authentication
- ↓
-Browse / Search / Manage Books
- ↓
-Exchange Request
- ↓
-Book Owner Approval
- ↓
-Book Exchange
- ↓
-Completed
-```
+**Key Engineering:** `Provider Isolation` · `Live Model Discovery` · `Provider-Scoped Caching` · `Model Resolution` · `Bounded Retries` · `Error Classification` · `Tool Permissions` · `Session Persistence`
 
-```text
-Activities / Controllers
-          ↓
-Adapters + Business Logic
-          ↓
-Models
-          ↓
-SQLite
-```
-
-**Stack:** `Android` · `Java` · `XML` · `SQLite` · `MVC` · `JWT` · `Android Studio`
+**Stack:** `Node.js` · `JavaScript` · `LLM APIs` · `CLI` · `AI Agents`
 
 <p>
-  <a href="https://github.com/sunilt808/BookSwap">
-    <img src="https://img.shields.io/badge/🔍%20Explore%20Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore BookSwap Repository">
+  <a href="https://github.com/sunilt808/Myagent">
+    <img src="https://img.shields.io/badge/🔍%20Explore%20Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore myagent Repository">
+  </a>
+  <a href="https://deepwiki.com/sunilt808/Myagent">
+    <img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki">
   </a>
 </p>
 
 ---
+
 
 ## 📚 Currently Learning
 
