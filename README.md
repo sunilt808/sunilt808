@@ -299,6 +299,8 @@ React 19 + Vite
 </p>
 ---
 
+---
+
 ## 🤖 [myagent](https://github.com/sunilt808/Myagent) — Multi-Provider AI Coding Agent [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/sunilt808/Myagent)
 
 **A terminal-based AI coding agent designed to eliminate LLM provider lock-in.**
@@ -306,6 +308,44 @@ React 19 + Vite
 myagent provides a unified coding workflow across **6+ LLM providers**, with **provider isolation, live model discovery, provider-scoped caching, intelligent model selection, and explicit provider/model switching**.
 
 The agent also supports **file search, reading, writing, editing, patching, terminal execution, permission controls, persistent sessions, centralized error classification, and bounded retries** for reliable developer workflows.
+
+**Architecture:**
+
+```text
+┌─────────────────────────────────────────────────────────────┐
+│                         USER / CLI                          │
+│                 REPL • Commands • Sessions                 │
+└──────────────────────────────┬──────────────────────────────┘
+                               │
+                               ▼
+┌─────────────────────────────────────────────────────────────┐
+│                         AGENT CORE                          │
+│        Prompt / Context • Model Selection • Agent Loop     │
+└───────────────┬─────────────────────────────┬───────────────┘
+                │                             │
+                ▼                             ▼
+┌──────────────────────────┐     ┌────────────────────────────┐
+│      MODEL SYSTEM        │     │       TOOL SYSTEM          │
+│                          │     │                            │
+│ Provider Resolution      │     │ File Read / Write / Edit  │
+│ Model Discovery          │     │ Search / Patch / Glob      │
+│ Model Cache              │     │ Terminal Execution         │
+│ Provider Isolation       │     │ Permission Control         │
+└──────────────┬───────────┘     └────────────────────────────┘
+               │
+               ▼
+┌─────────────────────────────────────────────────────────────┐
+│                     PROVIDER ADAPTERS                       │
+│                                                             │
+│   Groq   │   Gemini   │   Mistral   │   HuggingFace   │ …  │
+│                                                             │
+│   Independent credentials • discovery • cache • errors     │
+└──────────────────────────────┬──────────────────────────────┘
+                               │
+                               ▼
+┌─────────────────────────────────────────────────────────────┐
+│                       LLM PROVIDERS                         │
+└─────────────────────────────────────────────────────────────┘
 
 **Key Engineering:** `Provider Isolation` · `Live Model Discovery` · `Provider-Scoped Caching` · `Model Resolution` · `Bounded Retries` · `Error Classification` · `Tool Permissions` · `Session Persistence`
 
