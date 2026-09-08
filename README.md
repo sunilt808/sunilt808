@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/github/followers/sunilt808?label=Follow&style=social" alt="github followers" />
 </p>
 
-I'm a Computer Science & Engineering undergraduate at **Dayananda Sagar College of Engineering**, building practical software systems across the stack — with a growing focus on **backend engineering, system design, scalable architecture, and graph algorithms**.
+I'm a Computer Science & Engineering undergraduate at **Dayananda Sagar College of Engineering**, building practical software systems across the stack — with a growing focus on **backend engineer[...]
 
 I like projects that force me to think about **data modeling, security, automation, correctness, and real-world workflows**.
 
@@ -61,7 +61,7 @@ Data Structures & Algorithms · OOP · DBMS · REST API Design · JWT Authentica
 
 **Graph theory meets financial investigation.**
 
-TraceAcc1 is an **AML operations platform** that goes beyond simply flagging suspicious transactions. It connects **transaction analysis, graph-based detection, ML anomaly detection, investigation workflows, case management, report governance, and controlled client delivery** into one system.
+TraceAcc1 is an **AML operations platform** that goes beyond simply flagging suspicious transactions. It connects **transaction analysis, graph-based detection, ML anomaly detection, investigation[...]
 
 Transaction data is converted into a directed graph and analyzed using multiple complementary detection strategies:
 
@@ -75,7 +75,7 @@ Transaction data is converted into a directed graph and analyzed using multiple 
 * 🧬 **DC-LCG dual-view GNN** for graph-based anomaly analysis
 * 🎯 Hybrid scoring producing a **0–100 risk score**
 
-The important part is the workflow after detection: suspicious accounts become **alerts and findings**, which can move into investigation and case-management workflows rather than ending at an ML prediction.
+The important part is the workflow after detection: suspicious accounts become **alerts and findings**, which can move into investigation and case-management workflows rather than ending at an ML [...]
 
 ```text
 Transaction Dataset
@@ -150,7 +150,7 @@ Patient / Doctor / Manager / Admin
           MongoDB Atlas
 ```
 
-The backend is organized around dedicated API routers and services for authentication, hospitals, departments, doctors, patients, appointments, queues, tokens, billing, notifications, and audit workflows.
+The backend is organized around dedicated API routers and services for authentication, hospitals, departments, doctors, patients, appointments, queues, tokens, billing, notifications, and audit w[...]
 
 The application is deployed with a decoupled frontend/backend architecture.
 
@@ -174,7 +174,7 @@ The application is deployed with a decoupled frontend/backend architecture.
 
 **Turn messy placement announcements into structured opportunities automatically.**
 
-PlacementOS is a **personal placement intelligence system** built around a real problem: placement information arrives through scattered Telegram messages, PDFs, DOCX files, Excel sheets, images, and forms.
+PlacementOS is a **personal placement intelligence system** built around a real problem: placement information arrives through scattered Telegram messages, PDFs, DOCX files, Excel sheets, images,[...]
 
 Instead of manually checking everything, PlacementOS builds an automated pipeline that **extracts, understands, matches, deduplicates, tracks, and notifies**.
 
@@ -191,8 +191,8 @@ Telegram / PDFs / DOCX / Excel / Images
                   ↓
         Opportunity Engine
            ↙     ↓     ↘
-    Eligibility  Dedup  Deadlines
-      Matching   Merge   Tracking
+   Eligibility  Dedup  Deadlines
+     Matching   Merge   Tracking
            ↘     ↓     ↙
              MongoDB
                 ↓
@@ -301,65 +301,45 @@ React 19 + Vite
 
 ---
 
-## 🤖 [myagent](https://github.com/sunilt808/Myagent) — Multi-Provider AI Coding Agent
+## 📚 [BookSwap](https://github.com/sunilt808/BookSwap) — Android Book Exchange Platform
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/sunilt808/Myagent)
+**A peer-to-peer campus book exchange application built around real exchange workflows.**
 
-**A terminal-based AI coding agent designed to eliminate LLM provider lock-in.**
+BookSwap allows students to **list, discover, borrow, donate, and exchange books** within their college community.
 
-myagent provides a unified coding workflow across **6+ LLM providers**, with **provider isolation, live model discovery, provider-scoped caching, intelligent model selection, and explicit provider/model switching**.
-
-The agent also supports **file search, reading, writing, editing, patching, terminal execution, permission controls, persistent sessions, centralized error classification, and bounded retries** for reliable developer workflows.
-
-**Architecture:**
+The application implements authentication, user/admin roles, book management, exchange requests, and owner approval using an MVC-based Android architecture.
 
 ```text
-┌─────────────────────────────────────────────────────────────┐
-│                         USER / CLI                          │
-│                 REPL • Commands • Sessions                 │
-└──────────────────────────────┬──────────────────────────────┘
-                               │
-                               ▼
-┌─────────────────────────────────────────────────────────────┐
-│                         AGENT CORE                          │
-│        Prompt / Context • Model Selection • Agent Loop     │
-└───────────────┬─────────────────────────────┬───────────────┘
-                │                             │
-                ▼                             ▼
-┌──────────────────────────┐     ┌────────────────────────────┐
-│      MODEL SYSTEM        │     │       TOOL SYSTEM          │
-│                          │     │                            │
-│ Provider Resolution      │     │ File Read / Write / Edit  │
-│ Model Discovery          │     │ Search / Patch / Glob      │
-│ Model Cache              │     │ Terminal Execution         │
-│ Provider Isolation       │     │ Permission Control         │
-└──────────────┬───────────┘     └────────────────────────────┘
-               │
-               ▼
-┌─────────────────────────────────────────────────────────────┐
-│                     PROVIDER ADAPTERS                       │
-│                                                             │
-│   Groq   │   Gemini   │   Mistral   │   HuggingFace   │ …  │
-│                                                             │
-│   Independent credentials • discovery • cache • errors     │
-└──────────────────────────────┬──────────────────────────────┘
-                               │
-                               ▼
-┌─────────────────────────────────────────────────────────────┐
-│                       LLM PROVIDERS                         │
-└─────────────────────────────────────────────────────────────┘
+User
+ ↓
+Authentication
+ ↓
+Browse / Search / Manage Books
+ ↓
+Exchange Request
+ ↓
+Book Owner Approval
+ ↓
+Book Exchange
+ ↓
+Completed
 ```
 
-**Key Engineering:** `Provider Isolation` · `Live Model Discovery` · `Provider-Scoped Caching` · `Model Resolution` · `Bounded Retries` · `Error Classification` · `Tool Permissions` · `Session Persistence`
+```text
+Activities / Controllers
+        ↓
+Adapters + Business Logic
+        ↓
+Models
+        ↓
+SQLite
+```
 
-**Stack:** `Node.js` · `JavaScript` · `LLM APIs` · `CLI` · `AI Agents`
+**Stack:** `Android` · `Java` · `XML` · `SQLite` · `MVC` · `JWT` · `Android Studio`
 
 <p>
-  <a href="https://github.com/sunilt808/Myagent">
-    <img src="https://img.shields.io/badge/🔍%20Explore%20Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore myagent Repository">
-  </a>
-  <a href="https://deepwiki.com/sunilt808/Myagent">
-    <img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki">
+  <a href="https://github.com/sunilt808/BookSwap">
+    <img src="https://img.shields.io/badge/🔍%20Explore%20Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore BookSwap Repository">
   </a>
 </p>
 
@@ -373,7 +353,7 @@ The agent also supports **file search, reading, writing, editing, patching, term
 
 ## 🎯 Open To
 
-Roles in **Backend Engineering**, **Full-Stack Development**, and **Distributed / Scalable Systems** — especially teams working on backend architecture, system design, DevOps, graph-based applications, or automation-heavy products.
+Roles in **Backend Engineering**, **Full-Stack Development**, and **Distributed / Scalable Systems** — especially teams working on backend architecture, system design, DevOps, graph-based appli[...]
 
 ---
 
